@@ -30,25 +30,41 @@
                         </div>
                         <div class="b">
                             <div class="br1">
-                                <!--slideBox-->
-                                <div id="slideBox" class="slideBox">
-                                    <div class="hd">
-                                        <ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>
-                                    </div>
-                                    <div class="bd">
-                                        <ul>
-                                            <li><a href="#"><img src="http://placebox.es/548/252" /></a></li>
-                                            <li><a href="#"><img src="http://placebox.es/548/252" /></a></li>
-                                            <li><a href="#"><img src="http://placebox.es/548/252" /></a></li>
-                                            <li><a href="#"><img src="http://placebox.es/548/252" /></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <script id="jsID" type="text/javascript">
-                                 var ary = location.href.split("&");
-                                jQuery(".slideBox").slide( { mainCell:".bd ul", effect:"left",autoPlay:true  });
-                                </script>
-                                <!--slideBox-->
+                                <!--实用焦点图-->
+								<div class="focusBox">
+									<ul class="pic">
+											<li><a href="#"><img src="http://placebox.es/548/252"/></a></li>
+											<li><a href="#"><img src="http://placebox.es/548/252"/></a></li>
+											<li><a href="#"><img src="http://placebox.es/548/252"/></a></li>
+											<li><a href="#"><img src="http://placebox.es/548/252"/></a></li>
+									</ul>
+									<div class="txt-bg"></div>
+									<div class="txt">
+										<ul>
+											<li><a href="#">SuperSlide美女福利图Quiet</a></li>
+											<li><a href="#">SuperSlide美女福利图DoubleLi</a></li>
+											<li><a href="#">SuperSlide美女福利图爱的练习曲</a></li>
+											<li><a href="#">SuperSlide美女福利图夜莺</a></li>
+										</ul>
+									</div>
+						
+									<ul class="num">
+										<li><a>1</a><span></span></li>
+										<li><a>2</a><span></span></li>
+										<li><a>3</a><span></span></li>
+										<li><a>4</a><span></span></li>
+									</ul>
+							</div>
+						
+							<script type="text/javascript">
+								jQuery(".focusBox").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"click",
+									//下面startFun代码用于控制文字上下切换
+									startFun:function(i){
+										 jQuery(".focusBox .txt li").eq(i).animate({"bottom":0}).siblings().animate({"bottom":-36});
+									}
+								});
+							</script>
+								<!--实用焦点图-->
                             </div>
                         </div>
                     </div>
@@ -97,47 +113,47 @@
                                     <div class="bd">
                                         <ul class="picList">
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图1</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图2</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图3</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图4</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图5</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图6</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图2</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图3</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图4</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图5</a></div>
                                             </li>
                                             <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
+                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox[roadtrip]"><img src="http://placebox.es/172/212" /></a></div>
                                                 <div class="title"><a href="#">效果图11</a></div>
                                             </li>
                                         </ul>
@@ -388,314 +404,7 @@
                     </div>
                 </div>
             </div>
-            <div class="r r3">
-                <div class="rr1">
-                	<p>2013酒店类商家粽子新品展示</p>
-                </div>
-                <div class="rr2">
-                	<!--图片滚动1-->
-                    <div class="m m7" role="region">
-                        <div class="h">
-                            <h2 class="vh">图片滚动</h2>
-                        </div>
-                        <div class="b">
-                            <div class="br1">
-                                <!--picScroll-left-->
-                                <div class="picScroll-left">
-                                    <div class="hd">
-                                        <ul></ul>
-                                    </div>
-                                    <div class="bd">
-                                        <ul class="picList">
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图1</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图2</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图3</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图4</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图5</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图6</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图2</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图3</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图4</a></div>
-                                            </li>
-                                            <li>
-                                                <div class="pic"><a href="http://placebox.es/500/500" rel="lightbox"><img src="http://placebox.es/172/212" /></a></div>
-                                                <div class="title"><a href="#">效果图5</a></div>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                                <script type="text/javascript">
-                                jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,scroll:1,vis:5,delayTime:500});
-                                </script>
-                                <!--picScroll-left-->
-                            </div>
-                        </div>
-                    </div>
-					<!--图片滚动-->
-                </div>
-                <div class="rr3 clearfix">
-                    <div class="rc1 fl">
-                    	<!--投票-->
-                        <div class="m m8 ma">
-                        	<div class="h">
-                            	<h2 class="vh">投票</h2>
-                            </div>
-                            <div class="b">
-                            	<form action="#" method="post">
-                                	<fieldset>
-                                    	<ul class="clearfix li-fl">
-                                        	<li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                            	<div class="br1">
-                                                	<a href="#"><img src="http://placebox.es/158/46" /></a>
-                                                </div>
-                                                <div class="br2 clearfix">
-                                                	<div class="bc1 fl">
-                                                        <button class="btn" type="submit">投票</button>
-                                                    </div>
-                                                    <div class="bc2 fr">
-                                                        <p>票数：100</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                        <!--投票-->
-                    </div>
-                    <div class="rc2 fl">
-                    	<!--排行榜-->
-                        <div class="m m9 mb">
-                        	<div class="h">
-                            	<h2>排行榜</h2>
-                                <div class="hr">
-                                	<a href="#">more</a>
-                                </div>
-                            </div>
-                            <div class="b">
-                                <div class="br1">
-                                    <!--txtScroll-top-->
-                                    <div class="txtScroll-top">
-                                        <div class="bd">
-                                            <ul class="infoList">
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:60%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:40%"></span><span class="s2">120</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:20%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                                <li class="clearfix"><a href="#">春季出游别让：</a><div class="d1"><span class="s1" style="width:30%"></span><span class="s2">100</span></div></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                            
-                                    <script type="text/javascript">
-                                    jQuery(".txtScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"top",autoPlay:true,scroll:1,vis:5,delayTime:500});
-                                    </script>
-                                    <!--txtScroll-top-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--排行榜-->
-                        <!--粽子家的标题-->
-                        <div class="m m10 mc">
-                        	<div class="h">
-                            	<h2>粽子家的标题</h2>
-                                <div class="hr">
-                                	<a href="#">more</a>
-                                </div>
-                            </div>
-                            <div class="b">
-                            	<ul>
-                                    <li><a href="#">厦首个职业羽球俱乐部成立 将参加今年全国</a></li>
-                                    <li><a href="#">厦首个职业羽球俱乐部成立 将参加今年全国</a></li>
-                                    <li><a href="#">厦首个职业羽球俱乐部成立 将参加今年全国</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--粽子家的标题-->
-                    </div>
-                </div>
-            </div>
+            
             <div class="r r4 clearfix">
                 <div class="c c1 fl">
                 	<!--抽奖--> 
