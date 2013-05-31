@@ -263,3 +263,15 @@ body{background:url(../img/body.jpg) center 33px no-repeat #61A503;}
 .m19 .br2{text-align:center; padding:30px 0 15px 0;}
 .m19 .br2 a{display:inline-block; padding:4px 8px; border:1px solid #e3e3e3; color:#333333;}
 .m19 .br2 a:hover{background:#5a85b2; color:#fff !important;}
+/*-------------------图集m19--------------------------*/
+.g2_2{background:#fff;}
+.g2_2 .h{background:url(../img/m3-h.png) no-repeat; height:58px;}
+.g2_2 h2{padding-left:122px;}
+.g2_2 .b{padding:12px 0 9px 0;}
+.g2_2 .bc1{width:233px; margin-left:10px;}
+.g2_2 .bc2{width:471px; margin-left:20px;}
+.g2_2 .bc3{width:233px; margin-left:20px;}
+.g2_2 li a{display:block;}
+.g2_2 .b li{margin-bottom:2px; *line-height:0; *font-size:0;}
+.g2_2 .l1{margin-left:4px;}
+.g2_2 .l2 h3{height:42px; line-height:42px; background:#000; color:#FA7507; padding-left:14px; width:456px; font-size:14px;}
