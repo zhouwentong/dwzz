@@ -204,6 +204,8 @@ body{background:url(../img/body.jpg) center 33px no-repeat #61A503;}
 .m2 li a{color:#323232;}
 .m2 .more{text-align:right; font-size:12px;}
 .m2 .more a{color:#218F03;}
+/*-------------------模块m3--------------------------*/
+.m3 .hr{color: green;left: 10px;z-index: 999;top: 16px;font-weight: bold;}
 /*-------------------模块m4--------------------------*/
 .m4 .br2 .bc2{margin-right:5px;}
 /*-------------------模块m11--------------------------*/
